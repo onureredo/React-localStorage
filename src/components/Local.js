@@ -6,8 +6,7 @@ class Local extends React.Component {
 
       const person = {firstName: 'John', lastName: 'Doe', age: 26, eyeColor: 'Blue'};
 
-        // set data on localstorage
-        // localStorage.setItem('myData', 'I was hiding in Local Storage!');
+        // set data on localstorage       
         localStorage.setItem('person', JSON.stringify(person));
         console.log(`saved in local storage`);
     

@@ -5,6 +5,7 @@ import Local from './components/Local';
 
 function App() {
   return (
+    
     <div className="App">
       <h1>LOCAL STORAGE</h1>
       <Local /> 
