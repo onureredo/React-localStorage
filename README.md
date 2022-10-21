@@ -1,4 +1,4 @@
-## React Local & Session Storage
+## Local Storage
 
 - useEffect example 'll be added soon
 
