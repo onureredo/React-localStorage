@@ -17,17 +17,16 @@
 - Open your console in Browser and type: localStorage
 - Click storage and locate: setItem, getItem.
 - We will need those 2 methods to save/retrieve items from Storage.
-- console: localStorage.setItem('name', 'onur') check Application > LocalStorage
+- console: localStorage.setItem('name', 'John') check Application > LocalStorage
 - console: localStorage.getItem('name') > check console!
 - Objects: cannot directly, only with JSON.stringfy
 - Objects: retrieve, only with JSON.parse
-- const person = {firstName: 'Onur', lastName: 'Onur', age: 31}
+- const person = {firstName: 'John', lastName: 'Doe', age: 31}
 - console: book to check
 - to save to localstorage: localStorage.setItem('person', JSON.stringfy(person))
 - to get the item: localStorage.getItem('person')
-- but we have to parse the object: JSON.parse(result)
-- JSON.parse(person)
-- Check React APP and test it with objects.
+- parse the object: JSON.parse(person)
+- Check the local.js and test it with objects in app.
 
 ## Useful links
 
