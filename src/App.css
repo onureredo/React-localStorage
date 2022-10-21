@@ -1,25 +1,54 @@
 * {
-  /* min-height: 100vh; */
+  margin-top: 2rem; 
   background-color: #1b1b1b;
   text-align: center;
   font-family: Montserrat, sans-serif;
-  color: #6441a5;
+  color: #6441a5;   
 
 }
 
-button {
-  font-size: 2rem;
-  margin: 2rem;
-  padding: 1.5rem;
-  border-radius: 5%;
-  border: 2px solid #6441a5;
-
-}
-
-button:hover {
-  cursor: pointer;
-  opacity: 50%;  
-  transition: ease-in-out 0.15s;
-  padding: 2.5rem;
+h1 {
+  box-shadow: inset 0 0 0 0 #54b3d6; 
+  transition: color 3.5s ease-in-out, box-shadow 3s ease-in-out;
   
 }
+
+h1:hover {  
+  transition: ease-in-out 1s;
+  cursor: default;
+  box-shadow: inset 1920px 0 0 0 #54b3d6;
+  color: white;
+}
+
+h2 {
+  font-family: Ink Free, sans-serif;
+  padding-top: 1.5rem;
+}
+
+.btn {
+  font-size: 2rem;
+  margin: 2rem;
+  padding: 2.5rem;
+  border-radius: 5%;
+  border: 2px solid #6441a5;  
+    
+  color: #fff;
+  cursor: pointer;  
+
+}
+
+.btn:hover {
+  cursor: pointer;   
+  transition: ease-in-out 0.5s;  
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation:slidebg 5s linear infinite;
+  padding: 1.5rem;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+ }
+ 
+

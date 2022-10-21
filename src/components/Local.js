@@ -8,29 +8,29 @@ class Local extends React.Component {
 
         // set data on localstorage       
         localStorage.setItem('person', JSON.stringify(person));
-        console.log(`saved in local storage`);
+        console.log(`Saved in Local Storage`);
     
       }
     
-      getData() {
-    
-        const gettingData = localStorage.getItem('person');
-        console.log(JSON.parse(gettingData));
+      getData() {  
+
+        const getData = localStorage.getItem('person');
+        console.log(JSON.parse(getData));
     
       }
       
       clearData() {
         const clearData = localStorage.removeItem('person');
-        console.log('cleared');
+        console.log('Local Storage has been cleared!');
       }
 
       render() {  
         return (
           <div className="App">            
     
-              <button onClick={ () => this.setData() }>Set Data</button>
-              <button onClick={ () => this.getData() }>Get Data</button>
-              <button onClick={ () => this.clearData() }>Clear Data</button>
+              <button className='btn' onClick={ () => this.setData() }>Set Data</button>
+              <button className='btn' onClick={ () => this.getData() }>Get Data</button>
+              <button className='btn' onClick={ () => this.clearData() }>Clear Data</button>
     
           </div>
           

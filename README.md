@@ -1,7 +1,3 @@
-<!-- ## Local Storage
-
-- useEffect example 'll be added soon -->
-
 ## What is LocalStorage?
 
 - LocalStorage is a browser API that allows developers to store data and later read it.
