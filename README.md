@@ -1,6 +1,6 @@
-## Local Storage
+<!-- ## Local Storage
 
-- useEffect example 'll be added soon
+- useEffect example 'll be added soon -->
 
 ## What is LocalStorage?
 
