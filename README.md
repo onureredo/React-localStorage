@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+## React Local & Session Storage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- useEffect example 'll be added soon
 
-## Available Scripts
+## What is LocalStorage?
 
-In the project directory, you can run:
+- LocalStorage is a browser API that allows developers to store data and later read it.
 
-### `npm start`
+- It’s basically a database inside of your browser with a little more nuance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- When using localStorage, you technically need to store values as strings using keys and values, but to store more complex data like objects and arrays, you need to stringify that data when storing and parse it when reading it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- While this data won’t automatically be persisted across multiple browsers or multiple devices as it will only be stored locally, it still gives you the ability to improve UX where you might not have an opportunity to store every minute detail in a remote database.
 
-### `npm test`
+## Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Open your console in Browser and type: localStorage
+- Click storage and locate: setItem, getItem.
+- We will need those 2 methods to save/retrieve items from Storage.
+- console: localStorage.setItem('name', 'onur') check Application > LocalStorage
+- console: localStorage.getItem('name') > check console!
+- Objects: cannot directly, only with JSON.stringfy
+- Objects: retrieve, only with JSON.parse
+- const person = {firstName: 'Onur', lastName: 'Onur', age: 31}
+- console: book to check
+- to save to localstorage: localStorage.setItem('person', JSON.stringfy(person))
+- to get the item: localStorage.getItem('person')
+- but we have to parse the object: JSON.parse(result)
+- JSON.parse(person)
+- Check React APP and test it with objects.
 
-### `npm run build`
+## Useful links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- https://www.robinwieruch.de/local-storage-react/
+- https://www.youtube.com/watch?v=SOnMln3W0U8
+- https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/
+- https://www.youtube.com/watch?v=ZZS1irWSfxc
